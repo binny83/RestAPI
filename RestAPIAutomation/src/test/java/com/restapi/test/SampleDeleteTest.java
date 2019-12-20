@@ -19,7 +19,6 @@ public class SampleDeleteTest {
 		 RestAssured.baseURI ="http://dummy.restapiexample.com/api/v1";
 		 RequestSpecification httpRequest = RestAssured.given();
 		 
-		 
 		// Add a header stating the Request body is a JSON
 		 httpRequest.header("Content-Type", "application/json"); 
 		 
