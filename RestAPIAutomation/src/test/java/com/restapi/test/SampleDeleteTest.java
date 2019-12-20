@@ -25,9 +25,6 @@ public class SampleDeleteTest {
 		 // Delete the request and check the response
 		 Response response = httpRequest.request(Method.DELETE, "/delete/"+ empid);
 		
-		// String responseBody = response.getBody().asString();
-		// System.out.println("Respose Body is"+ responseBody);
-			
 		 int statusCode = response.getStatusCode();
 		 System.out.println(response.asString());
 		 Assert.assertEquals(statusCode, 200); 
