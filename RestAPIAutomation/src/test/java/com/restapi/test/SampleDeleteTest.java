@@ -22,7 +22,7 @@ public class SampleDeleteTest {
 		// Add a header stating the Request body is a JSON
 		 httpRequest.header("Content-Type", "application/json"); 
 		 
-		 // Delete the request and check the response
+		 //Delete the request and check the response
 		 Response response = httpRequest.request(Method.DELETE, "/delete/"+ empid);
 		
 		 int statusCode = response.getStatusCode();
