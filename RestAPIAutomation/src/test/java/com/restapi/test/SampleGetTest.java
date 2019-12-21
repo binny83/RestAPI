@@ -15,14 +15,14 @@ public class SampleGetTest {
 	{
 		//Specify the base URL to the RESTful web service
 		RestAssured.baseURI="http://dummy.restapiexample.com/api/v1/employee/";
-	
-		//Get the RequestSpecification of the request that you want to sent
-		RequestSpecification httpRequest= RestAssured.given();
 		
-		// Make a request to the server by specifying the method Type and the method URL.
-		 // This will return the Response from the server. Store the response in a variable.
-		 Response response = httpRequest.request(Method.GET, "/1");
-		 
+		
+		//Get the RequestSpecification of the request that you want to sent
+		
+			RequestSpecification httpRequest= RestAssured.given();
+	
+			Response response = httpRequest.request(Method.GET, "/1");
+		
 		 // Now let us print the body of the message to see what response
 		 // we have received from the server
 		 String responseBody = response.getBody().asString();
