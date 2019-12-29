@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.restapi.test.SamplePOSTTest">
+      <class name="com.restapi.test.TC101_POSTEmp_Details">
         <methods>
-          <include name="POSTCustomerDetails"/>
+          <include name="PostEmpDetails"/>
+          <include name="setup"/>
+          <include name="validateResponseBody"/>
         </methods>
-      </class> <!-- com.restapi.test.SamplePOSTTest -->
+      </class> <!-- com.restapi.test.TC101_POSTEmp_Details -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

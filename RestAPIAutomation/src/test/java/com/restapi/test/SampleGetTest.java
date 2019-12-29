@@ -27,6 +27,7 @@ public class SampleGetTest {
 		 // we have received from the server
 		 String responseBody = response.getBody().asString();
 		 System.out.println("Response Body is"+ responseBody);
+		 Assert.assertEquals(responseBody.contains("f"),true);
 		
 		 //statusCode verification
 		 int statusCode=response.getStatusCode();
